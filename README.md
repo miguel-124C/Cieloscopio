@@ -10,7 +10,7 @@ en el ``Bootcamp de Java`` de Alura Latam.
 ## 🔧  Requisitos
 
 - Java 11 o superior
-- API Key de <a href="https://home.openweathermap.org/api_keys">OpenWeatherMap</a>
+- Obtenga una AAPI Key de <a href="https://home.openweathermap.org/api_keys">OpenWeatherMap</a>
 
 <hr>
 
@@ -41,7 +41,8 @@ java -jar Cieloscopio.jar
     - Ver el pronostico de 5 días. 
 
 ## 📽️ Video Explicativo
-[![Watch the video](https://i9.ytimg.com/vi/9RKpqJZ6wtI/mqdefault.jpg?sqp=CJSYgrQG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGH8gEygUMA8=&rs=AOn4CLDiBJwMrTNUtWtFgUgd_GwxVL7iEg)](https://youtu.be/15qUYnmy14Q)
+
+[//]: # ([![Watch the video]&#40;https://i9.ytimg.com/vi/9RKpqJZ6wtI/mqdefault.jpg?sqp=CJSYgrQG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGH8gEygUMA8=&rs=AOn4CLDiBJwMrTNUtWtFgUgd_GwxVL7iEg&#41;]&#40;https://youtu.be/15qUYnmy14Q&#41;)
 
 <hr>
 
