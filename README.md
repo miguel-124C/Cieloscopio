@@ -11,6 +11,8 @@ en el ``Bootcamp de Java`` de Alura Latam.
 
 - Java 11 o superior
 - Obtenga una API Key de <a href="https://home.openweathermap.org/api_keys">OpenWeatherMap</a>
+- <a href="https://mvnrepository.com/artifact/com.google.code.gson/gson/2.11.0">
+  Descargar Gson</a> y añadirlo a las dependencias.
 
 <hr>
 
