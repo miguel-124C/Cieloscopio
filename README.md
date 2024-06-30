@@ -19,18 +19,8 @@ en el ``Bootcamp de Java`` de Alura Latam.
 1. Clona este repositorio.
 2. Configura la variable de entorno:
   - Renombre el archivo ``config.properties.copy`` por ``config.properties``
-  - Dentro del archivo dentra esto: ``API_KEY=your_api_key``    cambie    ``your_api_key`` por su apikey.
+  - Dentro del archivo tendrá esto: ``API_KEY=your_api_key``    cambie    ``your_api_key`` por su apikey.
 
-<hr>
-
-## 💻 Uso
-
-1. Descarga la <a href="https://github.com/miguel-124C/cieloscopio/releases/download/v1.0/Cieloscopio.jar" target="_blank">ultima version de la app</a>
-2. Ejecutala en tu linea de comandos
-
-```sh
-java -jar Cieloscopio.jar
-```
 <hr>
 
 ## 🌟 Funcionalidades
@@ -40,9 +30,10 @@ java -jar Cieloscopio.jar
     - Ver el clima actual.
     - Ver el pronostico de 5 días. 
 
+#  💻 Uso
 ## 📽️ Video Explicativo
 
-[//]: # ([![Watch the video]&#40;https://i9.ytimg.com/vi/9RKpqJZ6wtI/mqdefault.jpg?sqp=CJSYgrQG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGH8gEygUMA8=&rs=AOn4CLDiBJwMrTNUtWtFgUgd_GwxVL7iEg&#41;]&#40;https://youtu.be/15qUYnmy14Q&#41;)
+[![Watch the video](https://i9.ytimg.com/vi/9RKpqJZ6wtI/mqdefault.jpg?sqp=CJSYgrQG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGH8gEygUMA8=&rs=AOn4CLDiBJwMrTNUtWtFgUgd_GwxVL7iEg)](https://youtu.be/15qUYnmy14Q)
 
 <hr>
 

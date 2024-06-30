@@ -5,6 +5,7 @@ import com.cieloscopio.domain.entities.weather.ListForecast;
 import com.cieloscopio.domain.entities.weather.OpenForecastResponse;
 import com.cieloscopio.domain.entities.weather.OpenWeatherResponse;
 
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -25,7 +26,7 @@ public class WeatherCliDetails {
             System.out.println("| Estado: " + ((country.state() == null) ? "" : country.state()));
             index++;
         }
-        System.out.println("|_____________________________________|");
+        System.out.println("|-------------------------------------|");
     }
 
     public void showDetailCurrentWeather(OpenWeatherResponse weather){
@@ -44,7 +45,7 @@ public class WeatherCliDetails {
             System.out.println("| Velocidad : " + weather.wind().speed() + "m/s" + "   Grado : " + weather.wind().deg());
             System.out.println("| Ráfaga : " + weather.wind().gust() + "m/s");
         }
-        System.out.println("|_____________________________________|");
+        System.out.println("|-------------------------------------|");
     }
 
     public void showDetailForecast(OpenForecastResponse forecastResponse){
@@ -62,20 +63,24 @@ public class WeatherCliDetails {
                                             Collectors.toList())
                         );
 
+        String currentDate = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
         forecastDays.forEach( (time, listForecasts) ->{
             LocalDate date = LocalDate.parse(time, DateTimeFormatter.ofPattern("yyyy-MM-dd"));
             String dayOfWeek = date.getDayOfWeek()
                     .getDisplayName(TextStyle.FULL, new Locale("es","ES"));
 
-            System.out.println("| " + dayOfWeek.toUpperCase() + "                 "+ date);
+            if (currentDate.equals(time)){
+                System.out.println("| Hoy" + "                "+ date);
+            }else{
+                System.out.println("| " + dayOfWeek.toUpperCase() + "                 "+ date);
+            }
 
             double[] temp = getTempWeather( listForecasts );
             System.out.println("|-------------TEMPERATURA-------------|");
             System.out.println("| Maxima    : " + temp[0] + "ºC" );
             System.out.println("| Mínima    : " + temp[1] + "ºC" );
             System.out.println("| Humedad   : " + temp[2] +"%");
-            System.out.println("|_____________________________________|");
-
+            System.out.println("|-------------------------------------|");
         });
     }
 

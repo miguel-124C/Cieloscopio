@@ -63,18 +63,17 @@ public class ListCountries extends Cli {
     public void start(){
         while (true){
             this.showListCountries();
-            System.out.println("----------------------------------");
+            System.out.println("|-------------------------------------|");
+            System.out.println("| Opciones:");
             if (!countriesList.isEmpty()){
-                System.out.println("--Ingrese el número de la ciudad--");
-                System.out.println("----------------------------------");
+                System.out.println("| Ingrese el número de la ciudad");
             }
-            System.out.println("Más opciones:");
             if (this.countriesList.size() < this.maxCountriesList){
-                System.out.println("97) Añadir ciudad.");
+                System.out.println("| 97) Añadir ciudad.");
             }else{
-                System.out.println("98) Eliminar ciudad.");
+                System.out.println("| 98) Eliminar ciudad.");
             }
-            System.out.println("99) Volver.");
+            System.out.println("| 99) Volver.");
 
             try {
                 int option = input.nextInt();
@@ -87,13 +86,16 @@ public class ListCountries extends Cli {
         }
     }
     private void showListCountries() {
-        System.out.println("----------------------------");
-        System.out.println("Lista de Ciudades registradas");
+        System.out.println("|-------------------------------------|");
+        System.out.println("|    Lista de Ciudades registradas    |");
+        System.out.println("|-------------------------------------|");
         if (countriesList.isEmpty()){
-            System.out.println("--No hay ciudades registradas--");
+            System.out.println("|-------------------------------------|");
+            System.out.println("|     No hay ciudades registradas     |");
+            System.out.println("|-------------------------------------|");
         }
         for (int i = 0; i < countriesList.size(); i++){
-            System.out.println((i+1) + ")" + " " + countriesList.get(i).name() + "(" +countriesList.get(i).country()+ ")");
+            System.out.println("| " + (i+1) + ")" + " " + countriesList.get(i).name() + "(" +countriesList.get(i).country()+ ")");
         }
     }
     private boolean actions( int option ){
@@ -130,9 +132,9 @@ public class ListCountries extends Cli {
                         do {
                             showListCountries();
                             System.out.println("""
-                            Ingrese el número de la ciudad a eliminar.
-                            Opciones:
-                            99) Volver.
+                            | Ingrese el número de la ciudad a eliminar.
+                            | Opciones:
+                            | 99) Volver.
                             """);
 
                         } while (!this.deleteCountry());

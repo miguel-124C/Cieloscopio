@@ -38,16 +38,16 @@ public class Home extends Cli {
         };
     }
     private void welcome(){
-        System.out.println("|--------------------------|");
-        System.out.println("| Bienvenido a Cieloscopio |");
-        System.out.println("|--------------------------|");
+        System.out.println("|-------------------------------------|");
+        System.out.println("|       Bienvenido a Cieloscopio      |");
+        System.out.println("|-------------------------------------|");
         System.out.println();
 
-        System.out.println("Opciones:");
+        System.out.println("| Opciones:");
         System.out.println("""
-                1) Lista de ciudades.
-                2) Buscar por ciudad
-                99) Salir.
+                | 1) Lista de ciudades.
+                | 2) Buscar por ciudad
+                | 99) Salir.
                 """);
     }
 }

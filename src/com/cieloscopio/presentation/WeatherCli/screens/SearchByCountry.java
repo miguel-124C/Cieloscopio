@@ -20,10 +20,10 @@ public class SearchByCountry extends Cli {
             this.searchCountry();
             while (true){
                 this.details.showDetailCountries(countryData);
-                System.out.println("Ingrese el número de la ciudad");
-                System.out.println("Opciones:");
-                System.out.println("98) Volver a buscar por ciudad.");
-                System.out.println("99) Volver.");
+                System.out.println("| Ingrese el número de la ciudad");
+                System.out.println("| Opciones:");
+                System.out.println("| 98) Volver a buscar por ciudad.");
+                System.out.println("| 99) Volver.");
 
                 try {
                     int option = input.nextInt();
@@ -48,9 +48,9 @@ public class SearchByCountry extends Cli {
         this.countryData = new GetCoordByCityName( this.openWeatherDataSource ).execute(cityName);
 
         if (this.countryData.isEmpty()){
-            System.out.println("*********************************");
-            System.out.println("**No se encontró ninguna ciudad**");
-            System.out.println("*********************************");
+            System.out.println("-------------------------------------");
+            System.out.println("----No se encontró ninguna ciudad----");
+            System.out.println("-------------------------------------");
         }
 
         return this.countryData;
@@ -75,10 +75,10 @@ public class SearchByCountry extends Cli {
             System.out.println("| " + country.name() + "(" + country.country() + ")");
             System.out.println("|-------------------------------------|");
             System.out.println("""
-                        Opciones:
-                        1)  Clima actual.
-                        2)  Pronostico, proximos 5 días.
-                        99) Volver.
+                        | Opciones:
+                        | 1)  Clima actual.
+                        | 2)  Pronostico, proximos 5 días.
+                        | 99) Volver.
                         """);
 
         } while (!this.viewCurrentOrForecastWeather(country));
@@ -93,7 +93,7 @@ public class SearchByCountry extends Cli {
 
                 while (true){
                     this.details.showDetailCurrentWeather(weather);
-                    System.out.println("99) Volver");
+                    System.out.println("| 99) Volver");
                     int op = input.nextInt();
                     if (op == 99) {
                         break;
@@ -107,7 +107,7 @@ public class SearchByCountry extends Cli {
 
                 while (true){
                     this.details.showDetailForecast( forecast );
-                    System.out.println("99) Volver");
+                    System.out.println("| 99) Volver");
                     int op = input.nextInt();
                     if (op == 99) {
                         break;
