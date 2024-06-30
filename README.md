@@ -10,7 +10,7 @@ en el ``Bootcamp de Java`` de Alura Latam.
 ## 🔧  Requisitos
 
 - Java 11 o superior
-- Obtenga una AAPI Key de <a href="https://home.openweathermap.org/api_keys">OpenWeatherMap</a>
+- Obtenga una API Key de <a href="https://home.openweathermap.org/api_keys">OpenWeatherMap</a>
 
 <hr>
 
