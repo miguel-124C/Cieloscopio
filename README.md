@@ -35,7 +35,7 @@ en el ``Bootcamp de Java`` de Alura Latam.
 #  💻 Uso
 ## 📽️ Video Explicativo
 
-[![Watch the video](https://i9.ytimg.com/vi/9RKpqJZ6wtI/mqdefault.jpg?sqp=CJSYgrQG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGH8gEygUMA8=&rs=AOn4CLDiBJwMrTNUtWtFgUgd_GwxVL7iEg)](https://youtu.be/15qUYnmy14Q)
+[![Watch the video](https://i9.ytimg.com/vi_webp/X-qBLEfuKc8/mqdefault.webp?v=6681d80d&sqp=CLivh7QG&rs=AOn4CLDI446wquuicGuPMiWXCAhs4bvcHg)](https://youtu.be/X-qBLEfuKc8)
 
 <hr>
 
